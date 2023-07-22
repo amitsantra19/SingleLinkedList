@@ -6,6 +6,7 @@ public class Main {
        sl.insertFirstInList(10);
        sl.insertFirstInList(14);
        sl.insertLastInList(20);
+       sl.insertLastInList(25);
        sl.printLinkList();
     }
 }
