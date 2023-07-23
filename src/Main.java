@@ -1,3 +1,7 @@
+import org.w3c.dom.Node;
+
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
        SingleLinkedList sl = new SingleLinkedList();
@@ -22,5 +26,8 @@ public class Main {
        System.out.println("Search Element In LinkedList");
        int search = sl.searchElementFromLinkList(33);
        System.out.println("Element Found :"+ search);
+       System.out.println("Reverse Linked List");
+       sl.reverseLinkedList();
+       sl.printLinkList();
     }
 }

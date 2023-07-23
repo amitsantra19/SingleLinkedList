@@ -111,4 +111,16 @@ public class SingleLinkedList {
          }
          return -1;
     }
+
+    public void reverseLinkedList(){
+        Node current = head;
+        Node previous = null;
+        while(current!=null){
+            Node temp = current.next;
+            current.next = previous;
+            previous = current;
+            current = temp;
+        }
+       head = previous;
+    }
 }
